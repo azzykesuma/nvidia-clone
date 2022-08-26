@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.scss'
 // component
 import HeaderNav from '../component/HeaderNav'
 import HeroSlider from '../component/HeroSlider'
+import Shop from '../component/Shop';
+import Gaming from '../component/Gaming'
+import LatestNews from '../component/LatestNews'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +20,9 @@ const Home: NextPage = () => {
       <main>
         <HeaderNav />
         <HeroSlider />
+        <Shop />
+        <Gaming />
+        <LatestNews />
       </main>
     </div>
   )

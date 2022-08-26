@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
+// mui
+import { IconButton } from '@mui/material'
+
 // icons
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
@@ -16,8 +19,12 @@ const HeaderNav = () => {
   return (
     <nav className={styles.navBar}>
       <div className={styles.navBar__wrapper}>
-        <MenuIcon sx={{ color : '#666'}} />
-        <SearchIcon sx={{ color : '#666'}}/>
+        <IconButton>
+          <MenuIcon sx={{ color : '#666'}} />
+        </IconButton>
+        <IconButton>
+          <SearchIcon sx={{ color : '#666'}}/>
+        </IconButton>
       </div>
       <Image 
       src={logo}
@@ -26,8 +33,12 @@ const HeaderNav = () => {
       height='60px'
       />
       <div className={styles.navBar__wrapper}>
-        <ShoppingCartIcon sx={{ color : '#666'}}/>
-        <AccountCircleIcon sx={{ color : '#666'}}/>
+        <IconButton>
+          <ShoppingCartIcon sx={{ color : '#666'}}/>
+        </IconButton>
+        <IconButton>
+          <AccountCircleIcon sx={{ color : '#666'}}/>
+        </IconButton>
       </div>
     </nav>
   )
